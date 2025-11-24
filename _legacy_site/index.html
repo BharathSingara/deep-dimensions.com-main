@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Dimensions | Innovative Technology Solutions</title>
+    <meta name="description" content="Deep Dimensions provides cutting-edge technology solutions in AI, data consultancy, cybersecurity, and software development for startups, enterprises, and government agencies.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Deep Dimensions Logo">
+                <span class="logo-text">Deep Dimensions</span>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div id="hero-robot" class="hero-robot-container">
+                <div class="robot-speech-bubble" id="robotSpeech">
+                    <p class="robot-message">👋 Hey there! I'm here to help!</p>
+                </div>
+                <div class="minimal-input-container" id="minimalInput" style="display: none;">
+                    <input 
+                        type="text" 
+                        id="heroVoiceInput" 
+                        placeholder="Talk to me..." 
+                        class="minimal-voice-input"
+                    />
+                    <button id="heroVoiceSend" class="minimal-send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="user-response-bubble" id="userResponseBubble" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>We provide tailored technology solutions to help businesses thrive in the digital era.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">AI Solutions</h3>
+                    <p class="service-description">Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications that transform your business operations.</p>
+                </div>
+                
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Data Consultancy</h3>
+                    <p class="service-description">Turn your data into actionable insights with our comprehensive data analysis, visualization, and management services tailored to your business needs.</p>
+                </div>
+                
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Cybersecurity</h3>
+                    <p class="service-description">Protect your digital assets with our advanced cybersecurity solutions, including threat detection, vulnerability assessment, and security strategy development.</p>
+                </div>
+                
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Software Development</h3>
+                    <p class="service-description">Create custom software solutions that drive efficiency, enhance user experience, and provide competitive advantages in your industry.</p>
+                </div>
+                
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="service-title">Cloud Solutions</h3>
+                    <p class="service-description">Leverage the power of cloud computing for scalable, flexible, and cost-effective infrastructure that grows with your business needs.</p>
+                </div>
+                
+                <div class="service-card neon-border" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">Automation</h3>
+                    <p class="service-description">Streamline operations and reduce costs with intelligent automation solutions that handle repetitive tasks and complex workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h2>About Deep Dimensions</h2>
+                    <p>Deep Dimensions is a forward-thinking technology company specializing in providing cutting-edge solutions that empower businesses to navigate the complexities of the digital future.</p>
+                    <p>Our team of experts combines deep technical knowledge with strategic thinking to deliver tailored and secure technology solutions that drive innovation and growth for our clients.</p>
+                    <p>We believe in building long-term partnerships with our clients, understanding their unique challenges, and developing solutions that not only address current needs but also position them for future success.</p>
+                </div>
+                
+                <div class="about-3d-container" data-aos="fade-left">
+                    <div id="about-3d" class="animation-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technologies We Master</h2>
+                <p>We leverage cutting-edge technologies to deliver innovative solutions for our clients.</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4 class="tech-name">Python</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h4 class="tech-name">React</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h4 class="tech-name">Node.js</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="tech-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h4 class="tech-name">AWS</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 class="tech-name">Big Data</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4 class="tech-name">Machine Learning</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4 class="tech-name">Blockchain</h4>
+                </div>
+                
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="tech-name">Cybersecurity</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Case Studies</h2>
+                <p>Explore how we've helped businesses transform through technology.</p>
+            </div>
+            
+            <div class="case-studies-slider">
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/600x400/0a0f2d/ffffff?text=AI+Powered+Analytics" alt="AI Powered Analytics" class="case-study-image">
+                    <div class="case-study-content">
+                        <span class="case-study-category">AI Solutions</span>
+                        <h3 class="case-study-title">AI-Powered Analytics Platform</h3>
+                        <p class="case-study-description">We developed a custom AI-powered analytics platform for a financial services company, resulting in a 40% increase in predictive accuracy and $2.5M in operational savings.</p>
+                        <a href="#" class="read-more">Read Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x400/0a0f2d/ffffff?text=Cybersecurity+Implementation" alt="Cybersecurity Implementation" class="case-study-image">
+                    <div class="case-study-content">
+                        <span class="case-study-category">Cybersecurity</span>
+                        <h3 class="case-study-title">Enterprise Security Overhaul</h3>
+                        <p class="case-study-description">We implemented a comprehensive cybersecurity solution for a healthcare provider, securing sensitive patient data and achieving 100% compliance with industry regulations.</p>
+                        <a href="#" class="read-more">Read Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="case-study-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/600x400/0a0f2d/ffffff?text=Cloud+Migration" alt="Cloud Migration" class="case-study-image">
+                    <div class="case-study-content">
+                        <span class="case-study-category">Cloud Solutions</span>
+                        <h3 class="case-study-title">Cloud Migration & Optimization</h3>
+                        <p class="case-study-description">We helped a manufacturing company migrate their legacy systems to the cloud, resulting in 60% reduced infrastructure costs and 99.9% system availability.</p>
+                        <a href="#" class="read-more">Read Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>Ready to transform your business with cutting-edge technology solutions? Contact us today.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:bharath@deep-dimension.com">bharath@deep-dimension.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+919876543210">+91 7075774288</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form neon-border" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary glow">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Deep Dimensions Logo" >
+                        <span class="logo-text">Deep Dimensions</span>
+                    </div>
+                    <p>Empowering businesses to navigate the complexities of the digital future with tailored and secure technology solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#case-studies"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> AI Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Data Consultancy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cybersecurity</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Software Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            Bangalore, India
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:bharath@deep-dimension.com">bharath@deep-dimension.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="tel:+917075774288">+91 70757 74288</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Deep Dimensions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/hero-robot.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

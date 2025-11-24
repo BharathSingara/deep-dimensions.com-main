@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #020617;
+  --color-foreground: #f8fafc;
+
+  --color-deep-950: #020617;
+  --color-deep-900: #0f172a;
+  --color-deep-800: #1e293b;
+
+  /* Futuristic Palette */
+  --color-brand-primary: #00f0ff;
+  /* Cyan Neon */
+  --color-brand-secondary: #7000ff;
+  /* Electric Purple */
+  --color-brand-accent: #ff003c;
+  /* Cyber Red */
+  --color-brand-gold: #fcee0a;
+  /* Neon Yellow */
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-orbitron);
+  /* Robotic Font */
+  --font-mono: var(--font-orbitron);
+
+  --image-hero-glow: conic-gradient(from 180deg at 50% 50%, #00f0ff 0deg, #7000ff 180deg, #ff003c 360deg);
+}
+
+/* Utilities */
+@utility glass {
+  @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+}
+
+@utility glass-hover {
+  @apply hover:bg-white/5 hover:border-brand-primary/50 transition-all duration-300;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent;
+}
+
+@utility neon-border {
+  @apply border border-brand-primary/30;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+@utility glitch-text {
+  position: relative;
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    background-position: center top;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold tracking-wider uppercase;
+  }
+}
+
+/* 3D Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
